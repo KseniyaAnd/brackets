@@ -3,7 +3,7 @@ module.exports = function check(str, bracketsConfig) {
   const bracketPairs = {};
 
   for (const pair of bracketsConfig){
-    bracketPairs[paris[1]]=pair[0];
+    bracketPairs[pair[1]]=pair[0];
   }
 
   for (const char of str){
