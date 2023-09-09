@@ -1,14 +1,14 @@
 module.exports = function check(str, bracketsConfig) {
   const stack = [];
-  const bracketParis = {};
+  const bracketPairs = {};
 
   for (const pair of bracketsConfig){
-    bracketParis[paris[1]]=pair[0];
+    bracketPairs[paris[1]]=pair[0];
   }
 
   for (const char of str){
-    if (bracketParis[char] !== undefined){
-      const expectedBracket = bracketParis[cher];
+    if (bracketPairs[char] !== undefined){
+      const expectedBracket = bracketPairs[char];
       if (stack.length === 0 || stack.pop() !== expectedBracket){
         return false;
       }
